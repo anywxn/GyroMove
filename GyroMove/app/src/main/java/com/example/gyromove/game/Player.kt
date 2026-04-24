@@ -19,12 +19,8 @@ class Player(
     private val bitmap: Bitmap =
         BitmapFactory.decodeResource(context.resources, R.drawable.player).scale(166, 335)
 
-    private val radius = 50f
+    private val radius = 150f
     private val speed = 5f
-
-    private val paint = Paint().apply {
-        color = Color.BLUE
-    }
 
     fun update(tiltX: Float, tiltY: Float, screenW: Int, screenH: Int) {
 
